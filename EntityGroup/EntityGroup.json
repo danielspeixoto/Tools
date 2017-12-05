@@ -1,0 +1,77 @@
+{
+  "name": "EntityGroup",
+  "description": "Manual:\n1. Do foo\n2. Do bar",
+  "directory": {
+    "listBaseElement": [
+      {
+        "templateName": "Kotlin Data Class",
+        "extension": "kt",
+        "mapProperties": {},
+        "name": "${BASE_NAME}",
+        "isEnabled": true,
+        "script": "",
+        "writeRules": "FROM_PARENT",
+        "CLASS_META_KEY": "File"
+      },
+      {
+        "templateName": "Kotlin Contract Class",
+        "extension": "kt",
+        "mapProperties": {},
+        "name": "${BASE_NAME}Contract",
+        "isEnabled": true,
+        "script": "",
+        "writeRules": "FROM_PARENT",
+        "CLASS_META_KEY": "File"
+      },
+      {
+        "templateName": "Kotlin UseCase Class",
+        "extension": "kt",
+        "mapProperties": {},
+        "name": "${BASE_NAME}UseCase",
+        "isEnabled": true,
+        "script": "",
+        "writeRules": "FROM_PARENT",
+        "CLASS_META_KEY": "File"
+      },
+      {
+        "templateName": "Kotlin Controller Class",
+        "extension": "kt",
+        "mapProperties": {},
+        "name": "${BASE_NAME}Controller",
+        "isEnabled": true,
+        "script": "",
+        "writeRules": "FROM_PARENT",
+        "CLASS_META_KEY": "File"
+      },
+      {
+        "templateName": "Kotlin Repository Class",
+        "extension": "kt",
+        "mapProperties": {},
+        "name": "${BASE_NAME}Repository",
+        "isEnabled": true,
+        "script": "",
+        "writeRules": "FROM_PARENT",
+        "CLASS_META_KEY": "File"
+      }
+    ],
+    "name": "${BASE_NAME}",
+    "isEnabled": true,
+    "script": "\nfunction  getModifiedName(name) {\n   //A small Example:\n   return name.toLowerCase();\n}\n",
+    "writeRules": "OVERWRITE"
+  },
+  "mapGlobalVars": {},
+  "listGlobalVariable": [
+    {
+      "name": "BASE_NAME",
+      "isEnabled": true,
+      "script": "",
+      "value": "Project"
+    }
+  ],
+  "listTextInjection": [],
+  "skipRootDirectory": false,
+  "skipDefiningNames": false,
+  "shouldRegisterAction": true,
+  "shouldShowReport": false,
+  "fileTemplateSource": "DEFAULT_ONLY"
+}

@@ -1,0 +1,1 @@
+data class ${NAME}(val name : String)
